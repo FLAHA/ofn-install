@@ -1,0 +1,23 @@
+---
+
+# See https://github.com/openfoodfoundation/ofn-install/wiki/Setup for more info
+checkout_zone: Jordan
+country_code: JO
+currency: JOD
+locale: ar_JO
+available_locales: fr_BE,de_DE,en_BE,nl_BE
+language: ar_JO.UTF-8
+language_packages:
+  - language-pack-en-base
+l10n_repo: https://github.com/openfoodfoundation/l10n_au.git
+timezone: Amman
+
+
+# Used for the LetsEncrypt email setting
+developer_email: rafat.khashan82@gmail.com
+
+# Users listed here will have their key from /files/keys added to the unicorn_user
+users_sysadmin:
+  - "{{ core_devs }}"
+  - ofn
+
